@@ -57,4 +57,7 @@ func (r Response) SetHeaders(headers map[string]interface{}) error {
 	return err
 }
 
-// TODO exit
+func (r Response) Exit(status int, body interface{}, headers map[string]interface{}) error {
+	_, err := r.Ask(`kong.response.exit`, status, body, headers)
+	return err
+}

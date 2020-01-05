@@ -54,3 +54,10 @@ func TestSetHeaders(t *testing.T) {
 	var m map[string]interface{} = nil
 	assert.Equal(t, bridge.StepData{Method:"kong.response.set_headers", Args:[]interface{}{m}}, getBack(func() { response.SetHeaders(nil) }))
 }
+
+func TestExit(t *testing.T) {
+	var headers map[string]interface{} = nil
+	var body interface{} = nil
+	status := 200
+	assert.Equal(t, bridge.StepData{Method: "kong.response.exit", Args: []interface{}{status, body, headers}}, getBack(func() { response.Exit(status, body, headers) }))
+}
