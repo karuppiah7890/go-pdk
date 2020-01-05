@@ -2,7 +2,7 @@ package ip
 
 import (
 	"github.com/Kong/go-pdk/bridge"
-// 	"strconv"
+	// 	"strconv"
 )
 
 type Ip struct {

@@ -1,9 +1,9 @@
 package service
 
 import (
-	"testing"
 	"github.com/Kong/go-pdk/bridge"
 	"github.com/stretchr/testify/assert"
+	"testing"
 )
 
 var service Service
@@ -23,9 +23,9 @@ func getBack(f func()) interface{} {
 }
 
 func TestSetUpstream(t *testing.T) {
-	assert.Equal(t, bridge.StepData{Method:"kong.service.set_upstream", Args:[]interface{}{"foo"}}, getBack(func() { service.SetUpstream("foo") }))
+	assert.Equal(t, bridge.StepData{Method: "kong.service.set_upstream", Args: []interface{}{"foo"}}, getBack(func() { service.SetUpstream("foo") }))
 }
 
 func TestSetTarget(t *testing.T) {
-	assert.Equal(t, bridge.StepData{Method:"kong.service.set_target", Args:[]interface{}{"foo", 1}}, getBack(func() { service.SetTarget("foo", 1) }))
+	assert.Equal(t, bridge.StepData{Method: "kong.service.set_target", Args: []interface{}{"foo", 1}}, getBack(func() { service.SetTarget("foo", 1) }))
 }

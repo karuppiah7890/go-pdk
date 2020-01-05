@@ -10,7 +10,7 @@ type PdkBridge struct {
 
 type StepData struct {
 	Method string
-	Args []interface{}
+	Args   []interface{}
 }
 
 func New(ch chan interface{}) PdkBridge {
@@ -18,7 +18,7 @@ func New(ch chan interface{}) PdkBridge {
 }
 
 func (b PdkBridge) Ask(method string, args ...interface{}) (interface{}, error) {
-	b.ch <- StepData{ method, args }
+	b.ch <- StepData{method, args}
 
 	reply := <-b.ch
 	if reply == "null" {
@@ -71,7 +71,6 @@ func (b PdkBridge) AskMap(method string, args ...interface{}) (m map[string]inte
 	}
 	return
 }
-
 
 func ReturnTypeError(expected string) error {
 	return errors.New("expected type: " + expected)
