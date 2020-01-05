@@ -1,9 +1,10 @@
 package ip
 
 import (
+	"testing"
+
 	"github.com/Kong/go-pdk/bridge"
 	"github.com/stretchr/testify/assert"
-	"testing"
 )
 
 var ip Ip

@@ -2,6 +2,7 @@ package client
 
 import (
 	"fmt"
+
 	"github.com/Kong/go-pdk/bridge"
 	"github.com/Kong/go-pdk/entities"
 )
