@@ -1,7 +1,7 @@
 package response
 
 import (
-	"github.com/Kong/go-pdk/bridge"
+	"github.com/karuppiah7890/go-pdk/bridge"
 )
 
 type Response struct {

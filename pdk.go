@@ -1,17 +1,17 @@
 package pdk
 
 import (
-	"github.com/Kong/go-pdk/client"
-	"github.com/Kong/go-pdk/ip"
-	"github.com/Kong/go-pdk/log"
-	"github.com/Kong/go-pdk/nginx"
-	"github.com/Kong/go-pdk/node"
-	"github.com/Kong/go-pdk/request"
-	"github.com/Kong/go-pdk/response"
-	"github.com/Kong/go-pdk/router"
-	"github.com/Kong/go-pdk/service"
-	service_request "github.com/Kong/go-pdk/service/request"
-	service_response "github.com/Kong/go-pdk/service/response"
+	"github.com/karuppiah7890/go-pdk/client"
+	"github.com/karuppiah7890/go-pdk/ip"
+	"github.com/karuppiah7890/go-pdk/log"
+	"github.com/karuppiah7890/go-pdk/nginx"
+	"github.com/karuppiah7890/go-pdk/node"
+	"github.com/karuppiah7890/go-pdk/request"
+	"github.com/karuppiah7890/go-pdk/response"
+	"github.com/karuppiah7890/go-pdk/router"
+	"github.com/karuppiah7890/go-pdk/service"
+	service_request "github.com/karuppiah7890/go-pdk/service/request"
+	service_response "github.com/karuppiah7890/go-pdk/service/response"
 )
 
 // PDK go pdk module

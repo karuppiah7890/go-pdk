@@ -3,8 +3,8 @@ package client
 import (
 	"fmt"
 
-	"github.com/Kong/go-pdk/bridge"
-	"github.com/Kong/go-pdk/entities"
+	"github.com/karuppiah7890/go-pdk/bridge"
+	"github.com/karuppiah7890/go-pdk/entities"
 )
 
 type Client struct {

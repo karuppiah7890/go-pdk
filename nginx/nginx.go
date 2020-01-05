@@ -1,7 +1,7 @@
 package nginx
 
 import (
-	"github.com/Kong/go-pdk/bridge"
+	"github.com/karuppiah7890/go-pdk/bridge"
 )
 
 func checkFloat(v interface{}) (f float64, err error) {

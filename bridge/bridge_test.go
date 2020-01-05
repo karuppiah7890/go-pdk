@@ -3,7 +3,7 @@ package bridge
 import (
 	"testing"
 
-	"github.com/Kong/go-pdk/entities"
+	"github.com/karuppiah7890/go-pdk/entities"
 	"github.com/stretchr/testify/assert"
 )
 
